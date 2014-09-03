@@ -7,7 +7,9 @@ A redis mock for node
 
 ## Introduction
 
-The mock redis client barows methods from [node-redis-mock](https://github.com/darrylwest/mock-redis-client) which was originally cloned from redis-mock.  There are a few more implementations, like mset witch is handy for inserting model lists for query tests.
+The mock redis client barrows methods from [node-redis-mock](https://github.com/darrylwest/mock-redis-client) which was originally cloned from redis-mock.  There are a few more implementations, like mset, mget, etc.
+
+This project isn't a clone of mock-redis-client or mock-redis, rather it uses encapulation to inherit methods implemented by the base object.  This has proven to be a cleaner way of extending the original works from both projects.
 
 ## Installation
 
@@ -19,7 +21,7 @@ The mock redis client barows methods from [node-redis-mock](https://github.com/d
 
 ~~~
 	var MockRedisClient = require('mock-redis-client');
-    
+
     var client = new MockRedisClient();
 ~~~
 
@@ -59,6 +61,7 @@ Currently implemented are the following:
 * set
 * incr
 * mset
+* mget
 
 ## Hashing
 * hset
