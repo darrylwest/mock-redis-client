@@ -1,35 +1,21 @@
 {
-  "name": "websocket-spellcheck-service",
-  "version": "00.90.16",
-  "description": "A real-time spell checker service based on websockets",
+  "name": "mock-redis-client",
+  "version": "00.90.10",
+  "description": "A redis mock for node",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/darrylwest/websocket-spellcheck-service.git"
+    "url": "https://github.com/darrylwest/mock-redis-node.git"
   },
   "scripts": {
     "test": "grunt testAll"
   },
   "keywords": [
-    "spell",
-    "spellcheck",
-    "spellchecker",
-    "websockets",
-    "message",
-    "messaging",
-    "sockets",
-    "pub/sub",
-    "producer/consumer"
+    "redis",
+    "mock-redis",
+    "redis-mock"
   ],
   "dependencies": {
-    "background-service-runner": "^0.90.20",
-    "faye": "^1.0.3",
-    "lodash": "~2.4.1",
-    "moment": "^2.8.1",
-    "node-messaging-commons": "^0.90.33",
-    "node-uuid": "~1.4.1",
-    "simple-node-logger": "^0.92.11",
-    "spellchecker": "^1.0.1"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -47,9 +33,10 @@
     "chai": "~1.8.1",
     "express-mocks-http": "0.0.11",
     "grunt-contrib-watch": "~0.5.3",
+    "simple-node-logger": "^0.92.11",
     "casual": "~1.4.5"
   },
   "author": "darryl.west@raincitysoftware.com",
   "license": "Apache 2.0",
-  "homepage": "https://github.com/darrylwest/websocket-spellcheck-service"
+  "homepage": "https://github.com/darrylwest/mock-redis-client"
 }
