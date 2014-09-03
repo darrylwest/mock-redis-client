@@ -37,18 +37,17 @@ describe('MockRedisClient', function() {
         it('should have all known methods by count', function() {
             var methods = dash.methods( mock );
 
-            methods.length.should.equal( 122 );
+            methods.length.should.equal( 123 );
         });
     });
 
     describe('#mset/mget', function() {
-        var mock = new MockRedisClient();
+        var mock = new MockRedisClient(),
+            pairs = createPairs();
 
         it('should set a list of key/values', function(done) {
-            var callback,
-                pairs = createPairs();
 
-            callback = function(err, status) {
+            var callback = function(err, status) {
                 should.not.exist( err );
                 should.exist( status );
 
@@ -58,6 +57,22 @@ describe('MockRedisClient', function() {
             mock.mset( pairs, callback );
         });
 
-        it('should get a set of values from keys');
+        it('should get a set of values from keys', function(done) {
+            var callback = function(err, values) {
+                should.not.exist( err );
+                should.exist( values );
+
+                values.length.should.equal( pairs.length / 2 );
+
+                done();
+            };
+
+            var keys = [];
+            for (var i = 0; i < pairs.length; i += 2) {
+                keys.push( pairs[i] );
+            }
+
+            mock.mget( keys, callback );
+        });
     });
 });
