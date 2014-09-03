@@ -116,4 +116,4 @@ Currently implemented are the following:
 ~~~
 
 - - -
-<p><small><em>Copyright © 2014, rain city software | Version 0.90.10</em></small></p>
+<p><small><em>Copyright © 2014, rain city software | Version 0.90.11</em></small></p>
