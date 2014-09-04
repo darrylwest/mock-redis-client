@@ -5,27 +5,25 @@ A redis mock for node
 
 [![NPM version](https://badge.fury.io/js/mock-redis-client.svg)](http://badge.fury.io/js/mock-redis-client) [![Build Status](https://travis-ci.org/darrylwest/mock-redis-client.svg?branch=develop)](https://travis-ci.org/darrylwest/mock-redis-client) [![Dependency Status](https://david-dm.org/darrylwest/mock-redis-client.svg)](https://david-dm.org/darrylwest/mock-redis-client)
 
-## Introduction
+# Introduction
 
 The mock redis client barrows methods from [node-redis-mock](https://github.com/darrylwest/mock-redis-client) which was originally cloned from redis-mock.  There are a few more implementations, like mset, mget, etc.
 
-This project isn't a clone of mock-redis-client or mock-redis, rather it uses encapulation to inherit methods implemented by the base object.  This has proven to be a cleaner way of extending the original works from both projects.
+This project isn't a clone of mock-redis-client or mock-redis, rather it uses encapulation to inherit methods implemented by the base object.  It's a cleaner way of extending the original works from both projects.
 
-## Installation
+# Installation
 
 ~~~
 	npm install mock-redis-client --save-dev
 ~~~
 
-## Use
+# Use
 
 ~~~
 	var MockRedisClient = require('mock-redis-client');
 
     var client = new MockRedisClient();
 ~~~
-
-## API Implementation
 
 # API
 
@@ -103,6 +101,8 @@ Currently implemented are the following:
 * exec
 * every previous supported commands can be chained
 
+# Tests
+
 ~~~
     make test
 
@@ -116,4 +116,4 @@ Currently implemented are the following:
 ~~~
 
 - - -
-<p><small><em>Copyright © 2014, rain city software | Version 0.90.11</em></small></p>
+<p><small><em>Copyright © 2014, rain city software | Version 0.90.12</em></small></p>

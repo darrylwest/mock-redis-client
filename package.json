@@ -1,6 +1,6 @@
 {
   "name": "mock-redis-client",
-  "version": "00.90.11",
+  "version": "00.90.12",
   "description": "A redis mock for node",
   "main": "index.js",
   "repository": {
