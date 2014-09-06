@@ -25,6 +25,14 @@ This project isn't a clone of mock-redis-client or mock-redis, rather it uses en
     var client = new MockRedisClient();
 ~~~
 
+Or if you need to mock redis itself, then do this:
+
+~~~
+    var redis = require('mock-redis-client').createMockRedis();
+
+    var client = redis.createClient();
+~~~
+
 # API
 
 Currently implemented are the following:
@@ -116,4 +124,4 @@ Currently implemented are the following:
 ~~~
 
 - - -
-<p><small><em>Copyright © 2014, rain city software | Version 0.90.12</em></small></p>
+<p><small><em>Copyright © 2014, rain city software | Version 0.90.13</em></small></p>

@@ -41,6 +41,15 @@ describe('MockRedisClient', function() {
         });
     });
 
+    describe('createMockRedis', function() {
+        it('should create an instance of mock redis', function() {
+            var mock = MockRedisClient.createMockRedis();
+
+            should.exist( mock );
+            mock.createClient.should.be.a('function');
+        });
+    });
+
     describe('#mset/mget', function() {
         var mock = new MockRedisClient(),
             pairs = createPairs();
