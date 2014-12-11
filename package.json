@@ -1,11 +1,11 @@
 {
   "name": "mock-redis-client",
-  "version": "00.90.14",
-  "description": "A redis mock for node",
+  "version": "00.90.15",
+  "description": "A redis mock for node development",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/darrylwest/mock-redis-node.git"
+    "url": "https://github.com/darrylwest/mock-redis-client.git"
   },
   "scripts": {
     "test": "grunt testAll"
