@@ -7,7 +7,7 @@ A redis mock for node
 
 # Introduction
 
-The mock redis client barrows methods from [node-redis-mock](https://github.com/darrylwest/mock-redis-client) which was originally cloned from redis-mock.  There are a few more implementations, like mset, mget, etc.
+The mock redis client borrows methods from [node-redis-mock](https://github.com/darrylwest/mock-redis-client) which was originally cloned from redis-mock.  There are a few more implementations, like mset, mget, etc.
 
 This project isn't a clone of mock-redis-client or mock-redis, rather it uses encapulation to inherit methods implemented by the base object.  It's a cleaner way of extending the original works from both projects.
 
@@ -124,4 +124,4 @@ Currently implemented are the following:
 ~~~
 
 - - -
-<p><small><em>Copyright © 2014-2015, rain city software | Version 0.90.16</em></small></p>
+<p><small><em>Copyright © 2014-2015, rain city software | Version 0.90.17</em></small></p>
