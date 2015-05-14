@@ -19,7 +19,7 @@ describe('MockRedisClient', function() {
         var pairs = [];
 
         while (count-- > 0) {
-            pairs.push( uuid.v4() );
+            pairs.push( 'Key:' + uuid.v4() );
             pairs.push( casual.sentence );
         }
 
@@ -82,6 +82,47 @@ describe('MockRedisClient', function() {
             for (var i = 0; i < pairs.length; i += 2) {
                 keys.push( pairs[i] );
             }
+
+            mock.mget( keys, callback );
+        });
+
+        it('should return keys in the correct order and include nulls when key is not found', function(done) {
+            var keys = [],
+                expectedValues = [],
+                callback;
+
+            callback = function(err, values) {
+                should.not.exist( err );
+                should.exist( values );
+                
+                values.length.should.equal( keys.length );
+
+                values.forEach(function(value) {
+                    var expected = expectedValues.shift();
+                    if (value !== null) {
+                        value.should.equal(expected);
+                    } else {
+                        should.not.exist( expected );
+                    }
+                });
+
+                done();
+            };
+
+            pairs.forEach(function(item) {
+                if (dash.startsWith( item, 'Key:')) {
+                    keys.push( item );
+                } else {
+                    expectedValues.push( item );
+                }
+            });
+
+            // now patch in some unknown keys
+            keys[ 4 ] = 'nil-key-1';
+            expectedValues[ 4 ] = null;
+
+            keys[ 10 ] = 'nil-key-2';
+            expectedValues[ 10 ] = null;
 
             mock.mget( keys, callback );
         });
