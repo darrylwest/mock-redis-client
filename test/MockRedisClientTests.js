@@ -37,7 +37,7 @@ describe('MockRedisClient', function() {
         it('should have all known methods by count', function() {
             var methods = dash.methods( mock );
 
-            methods.length.should.equal( 123 );
+            methods.length.should.equal( 127 );
         });
     });
 
@@ -59,6 +59,8 @@ describe('MockRedisClient', function() {
             var callback = function(err, status) {
                 should.not.exist( err );
                 should.exist( status );
+
+                console.log( status );
 
                 done();
             };
