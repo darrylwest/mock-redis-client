@@ -73,7 +73,10 @@ describe('MockRedisClient', function() {
                 should.not.exist( err );
                 should.exist( values );
 
-                values.length.should.equal( pairs.length / 2 );
+                values.length.should.equal( pairs.length / 2 + 1);
+                values[0].should.equal(pairs[1]);
+                values[1].should.equal(pairs[3]);
+                should.equal(values[values.length - 1], null);
 
                 done();
             };
@@ -82,6 +85,7 @@ describe('MockRedisClient', function() {
             for (var i = 0; i < pairs.length; i += 2) {
                 keys.push( pairs[i] );
             }
+            keys.push('absent key');
 
             mock.mget( keys, callback );
         });
