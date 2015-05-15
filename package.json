@@ -44,13 +44,18 @@
     "email":"darryl.west@raincitysoftware.com",
     "url":"http://blog.raincitysoftware.com"
   },
-  "contributors":{
+  "contributors":[
     {
         "name":"darryl west",
         "email":"darryl.west@raincitysoftware.com",
         "url":"http://blog.raincitysoftware.com"
+    },
+    {
+        "name":"Joseph Podwys",
+        "email":"joseph@podwys.com",
+        "url":"http://joepodwys.com"
     }
-  },
+  ],
   "license": "Apache 2.0",
   "homepage": "https://github.com/darrylwest/mock-redis-client"
 }
