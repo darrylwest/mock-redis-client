@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "lodash": "^3.7.0",
-    "node-redis-mock": "^0.2.14"
+    "node-redis-mock": "^0.2.16"
   },
   "devDependencies": {
     "simple-node-logger": "^0.92.11",
