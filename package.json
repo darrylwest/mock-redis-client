@@ -1,6 +1,6 @@
 {
   "name": "mock-redis-client",
-  "version": "00.91.12",
+  "version": "00.91.13",
   "description": "A redis mock for node development",
   "main": "index.js",
   "repository": {
@@ -20,7 +20,7 @@
     "node-redis-mock": "^0.2.14"
   },
   "devDependencies": {
-    "simple-node-logger": "^0.92.11",
+    "simple-node-logger": "^0.93.11",
     "casual": "~1.4.5",
     "chai": "~1.8.1",
     "express-mocks-http": "0.0.11",
