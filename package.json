@@ -39,7 +39,23 @@
     "node-uuid": "^1.4.1",
     "time-grunt": "~0.1.1"
   },
-  "author": "darryl.west@raincitysoftware.com",
+  "author": {
+    "name":"darryl west",
+    "email":"darryl.west@raincitysoftware.com",
+    "url":"http://blog.raincitysoftware.com"
+  },
+  "contributors":[
+    {
+        "name":"darryl west",
+        "email":"darryl.west@raincitysoftware.com",
+        "url":"http://blog.raincitysoftware.com"
+    },
+    {
+        "name":"Joseph Podwys",
+        "email":"joseph@podwys.com",
+        "url":"http://joepodwys.com"
+    }
+  ],
   "license": "Apache 2.0",
   "homepage": "https://github.com/darrylwest/mock-redis-client"
 }
