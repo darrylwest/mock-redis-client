@@ -124,4 +124,4 @@ Currently implemented are the following:
 ~~~
 
 - - -
-<p><small><em>Copyright © 2014-2016, rain city software | Version 0.91.11</em></small></p>
+<p><small><em>Copyright © 2014-2016, rain city software | Version 0.91.12</em></small></p>
