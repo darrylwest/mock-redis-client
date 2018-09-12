@@ -49,11 +49,6 @@
         "name":"darryl west",
         "email":"darryl.west@raincitysoftware.com",
         "url":"http://blog.raincitysoftware.com"
-    },
-    {
-        "name":"Joseph Podwys",
-        "email":"joseph@podwys.com",
-        "url":"http://joepodwys.com"
     }
   ],
   "license": "Apache 2.0",
